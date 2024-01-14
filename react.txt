@@ -37,3 +37,8 @@ Herhangi bir state gönderilmeyecek (props gönderilebilir) sabit componentleri 
 Class Component de hem props hem state olabilir.
 Func Comp render olmaz sadece return olur ve içerisinde birdiv ile jsx formatı döndürür.Arrow func şek yazbsin.
 
+Props->Bir componentden başka bir componente veri aktarımı yapar.
+Render olanlar this.props alır.Olmayanlar (props) alır.
+ClassBase componentlere this.props diye erişim sağlanır.
+Functional componen da parametreye props yazılır.
+

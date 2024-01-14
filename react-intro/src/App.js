@@ -5,10 +5,18 @@ import User from './components/User';
 function App() {
   return (
     <div className='container'>
-     <h1 style={{color:'blue',fontSize:"20px"}}>App Component</h1>
-     <h4 className='header'>Kullanici Bilgileri</h4>
-     <User/>
-     <Navbar/>
+     
+     <Navbar />
+     <hr/>
+     <User
+      name="asli"
+      department="died"
+     />
+
+<User
+      name="koray"
+      department="llived"
+     />
     </div>
   );
 }

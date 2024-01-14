@@ -1,0 +1,39 @@
+****REACT*************
+Kullanici arayüzleri oluşturmak için Facebook tarfından geliştirilen bir Js kütüphanesidir.Framework değil !
+Çünkü kendi routing sistemi yok.Üzerine ekstra kütüphane ekleyebiliyorsun.
+View Katmanı (model view controller tasarım modelinde)  ile yoğın ilgilenir.
+Virtual DOM performans (performan arttırıcı).
+Jquery yada Js geliştirirken gerçek real DOM ğzerinden işlem yapılır ve burada değişiklik olmayan yerlerde tekrar taranır ve render 
+edilir.Ancak Virtual DOM da sadece değişiklik olan yer render edilir.
+**Component tabanlı  (her componentin propsu ve state bulunuyor).Reusability(tekrar kullanılabilirlik) sağlar.
+ES6 Syntax.
+JSX format (JavaScriptin içinde html yazmanı sağlayan format).
+
+Biz bu projede reactın Contex API ve Redux State Management ile ilgili çalışacağız.
+
+Virtual DOM :
+Real DOM (gerçek dom) bellekteki kopyasıdır.
+Document objeleri key-value olarak bulunur.
+Güncelleme anında bellekte 2 adet Virtual DOM (snapshot) bulunur.
+Sayfada sadece değişikliklerin olduğu yer güncellenir (state değiştiğinde).
+Performan arttırır.
+
+
+Node js ve npm kurulumu yapman gerek.
+React Dev Tools ve Redux Dev Tools kur.
+
+Package.json -> Npm paketlerini  yönetmek için kullandığın manifesto dosyasıdır.
+scripts->build->ürünü canlıya çıkarma anında tek bir bundle haline getirir.webpack kullanır.
+jsx formatı döenbilmek için mutlaka render fornksiyonu ile return edilmesi gerekir.(app.css,index.js)
+
+App.js->ana sayfaya yerleşmesi için render fonksiyonu kullanılır.render ise return ile jsx kodlarımızı yazmamızı sağlar.
+JSX formatı sadece 1 tane parent element dönebilir.Yani wrapper(sarmallama) yapısında çalışır.
+Componentler bir defa yazılır,istenildiği kadar kullanılır.
+React öğrenmek adına app.css yerine hızlı olması için bootstrap kullanacağız.Ürünü yayına alacaksan node modulese npm install yap
+yoksa internette bootstrap cdn ile index.html sayfasına import edebilirsin.Biz bunu kull.
+
+Recact iki tür component var: 1-classbase comp 2-Functional Component
+Herhangi bir state gönderilmeyecek (props gönderilebilir) sabit componentleri functional yazmak daha doğrudur.
+Class Component de hem props hem state olabilir.
+Func Comp render olmaz sadece return olur ve içerisinde birdiv ile jsx formatı döndürür.Arrow func şek yazbsin.
+
